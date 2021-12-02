@@ -8,7 +8,7 @@ increased_depth_count = 0
 i = 0
 while i < len(lines):
   if i > 0:
-    if lines[i].strip() > lines[i-1].strip():
+    if int(lines[i].strip()) > int(lines[i-1].strip()):
       increased_depth_count += 1
   i += 1
 
