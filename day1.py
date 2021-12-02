@@ -5,11 +5,7 @@ def get_formatted_inputs(file_name):
     with open(file_name) as f:
         lines = f.readlines()
 
-    formatted_lines = []
-    for line in lines:
-        formatted_lines.append(int(line.strip()))
-  
-    return formatted_lines
+    return [int(line.strip()) for line in lines]
 
 
 # count how many times depth increased
